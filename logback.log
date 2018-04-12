@@ -190,3 +190,33 @@
 2018-04-12 11:23:21.936  INFO 61176 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2018-04-12 11:23:21.938  INFO 61176 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-04-12 11:23:21.967  INFO 61176 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-04-12 11:47:30.694  INFO 61577 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 61577 (started by wuwf in /Users/wuwf/project/landing_page)
+2018-04-12 11:47:30.696  INFO 61577 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
+2018-04-12 11:47:30.762  INFO 61577 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@18f8cd79: startup date [Thu Apr 12 11:47:30 CST 2018]; root of context hierarchy
+2018-04-12 11:47:32.905  INFO 61577 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54842cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-12 11:47:33.370  INFO 61577 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-12 11:47:33.396  INFO 61577 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-12 11:47:33.520  INFO 61577 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-04-12 11:47:33.522  INFO 61577 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-04-12 11:47:33.691  INFO 61577 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-12 11:47:33.880  INFO 61577 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-04-12 11:47:34.575  INFO 61577 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-04-12 11:47:34.595  INFO 61577 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-04-12 11:47:35.607  INFO 61577 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-12 11:47:36.737  INFO 61577 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-12 11:47:37.331  INFO 61577 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@18f8cd79: startup date [Thu Apr 12 11:47:30 CST 2018]; root of context hierarchy
+2018-04-12 11:47:37.422  WARN 61577 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-12 11:47:37.502  INFO 61577 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
+2018-04-12 11:47:37.509  INFO 61577 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
+2018-04-12 11:47:37.511  INFO 61577 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
+2018-04-12 11:47:37.514  INFO 61577 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-12 11:47:37.520  INFO 61577 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-12 11:47:37.574  INFO 61577 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-12 11:47:37.575  INFO 61577 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-12 11:47:37.951  INFO 61577 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 7.872 seconds (JVM running for 9.217)
+2018-04-12 11:47:38.148  INFO 61577 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@18f8cd79: startup date [Thu Apr 12 11:47:30 CST 2018]; root of context hierarchy
+2018-04-12 11:47:38.153  INFO 61577 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-12 11:47:38.154  INFO 61577 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-04-12 11:47:38.169  INFO 61577 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

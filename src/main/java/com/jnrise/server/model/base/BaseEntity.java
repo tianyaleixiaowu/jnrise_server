@@ -27,9 +27,9 @@ public class BaseEntity {
 
     private String type2;
 
-    private Date createTime;
+    private Date createTime = new Date();
 
-    private Date updateTime;
+    private Date updateTime = new Date();
 
     @Override
     public String toString() {
