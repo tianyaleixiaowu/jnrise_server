@@ -4,6 +4,7 @@ package com.jnrise.server.model;
 import com.jnrise.server.model.base.BaseEntity;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
 import javax.persistence.Table;
 
 /**
@@ -11,7 +12,8 @@ import javax.persistence.Table;
  * @author wuweifeng wrote on 2018/3/5.
  */
 @Entity
-@Table(name = "info")
+@Table(name = "info", indexes = {@Index(name = "phone", columnList =
+        "phone", unique = true)})
 public class Info extends BaseEntity {
     /**
      * 手机号
