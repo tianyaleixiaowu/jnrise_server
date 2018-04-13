@@ -15,6 +15,9 @@ public class InfoManager {
     private InfoRepository infoRepository;
 
     public Info save(Info info) {
+        if (existMobile(info.getPhone())) {
+            return null;
+        }
         return infoRepository.save(info);
     }
 

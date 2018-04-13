@@ -18,6 +18,8 @@ public class InfoController {
     @Resource
     private InfoManager infoManager;
 
+    //https://gitee.com/lemur/easypoi这个有Excel导出的例子
+
     @PostMapping
     public InfoData save(Info info) {
         InfoData infoData = new InfoData();
