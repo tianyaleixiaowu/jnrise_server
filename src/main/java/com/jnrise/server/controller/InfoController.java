@@ -27,4 +27,5 @@ public class InfoController {
         infoData.setInfo(infoManager.save(info));
         return infoData;
     }
+
 }

@@ -7,6 +7,22 @@ public class BaseData {
     private int code;
     private String message;
 
+    public BaseData() {
+    }
+
+    public BaseData(int code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseData{" +
+                "code=" + code +
+                ", message='" + message + '\'' +
+                '}';
+    }
+
     public int getCode() {
         return code;
     }
