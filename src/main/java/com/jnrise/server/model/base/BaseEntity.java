@@ -1,9 +1,8 @@
 package com.jnrise.server.model.base;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import com.jnrise.server.bean.BaseUrlBean;
+
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -31,6 +30,24 @@ public class BaseEntity {
 
     private Date updateTime = new Date();
 
+    /**
+     * 对4个属性进行的签名，不需要入库
+     */
+    @Transient
+    private String sign;
+
+    public void setSign(String sign) {
+        //如果客户端传来的有sign，我们就去解析
+        if (sign != null) {
+            BaseUrlBean baseUrlBean = new BaseUrlBean().decrypt(sign);
+            this.channel = baseUrlBean.getChannel();
+            this.original = baseUrlBean.getOriginal();
+            this.type1 = baseUrlBean.getType1();
+            this.type2 = baseUrlBean.getType2();
+        }
+        this.sign = sign;
+    }
+
     @Override
     public String toString() {
         return "BaseEntity{" +
@@ -43,6 +60,12 @@ public class BaseEntity {
                 ", updateTime=" + updateTime +
                 '}';
     }
+
+    public String getSign() {
+        return sign;
+    }
+
+
 
     public Date getCreateTime() {
         return createTime;
