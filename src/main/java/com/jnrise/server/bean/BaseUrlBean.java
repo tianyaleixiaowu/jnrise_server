@@ -23,12 +23,10 @@ public class BaseUrlBean {
         BaseUrlBean baseUrlBean = new BaseUrlBean();
         baseUrlBean.setChannel("shunfei");
         baseUrlBean.setOriginal("");
-        for (int i = 1; i <= 2; i++) {
-            baseUrlBean.setType1(i + "");
-            for (int j = 1; j <= 10; j++) {
-                baseUrlBean.setType2(j + "");
-                System.out.println("http://mm.jnrise.cn/loading/" + baseUrlBean.encrypt() + "page-4.html");
-            }
+        baseUrlBean.setType1(4 + "");
+        for (int i = 1; i <= 50; i++) {
+            baseUrlBean.setType2(i + "");
+            System.out.println("http://mm.jnrise.cn/loading/gMtz7R.html?sign=" + baseUrlBean.encrypt());
         }
 
     }
@@ -38,7 +36,7 @@ public class BaseUrlBean {
      * @return 密串
      */
     public String encrypt() {
-        return AESOperator.getInstance().encrypt(channel + "," + original + "," + "type1" + "," + type2);
+        return AESOperator.getInstance().encrypt(channel + "," + original + "," + type1 + "," + type2);
     }
 
     public BaseUrlBean decrypt(String sign) {
