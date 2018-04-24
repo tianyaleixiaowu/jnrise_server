@@ -1,7 +1,9 @@
 package com.jnrise.server.controller;
 
+import com.jnrise.server.bean.BaseUrlBean;
 import com.jnrise.server.manager.UrlManager;
 import com.jnrise.server.model.Url;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +23,9 @@ public class RedirectController {
     @RequestMapping("/{s}")
     public String redirect(@PathVariable String s, HttpServletResponse response) throws Exception {
         Url url = urlManager.find(s);
-        return "redirect:http://mm.jnrise.cn/loading/gMtz7R.html?channel=" + url.getChannel() + "&original=" +
-                url.getOriginal() + "&type1=" + url.getType1() + "&type2=" + url.getType2();
+        BaseUrlBean baseUrlBean = new BaseUrlBean();
+        BeanUtils.copyProperties(url, baseUrlBean);
+        return "redirect:http://mm.jnrise.cn/loading/gMtz7R.html?sign=" + baseUrlBean.encrypt();
     }
 
 
