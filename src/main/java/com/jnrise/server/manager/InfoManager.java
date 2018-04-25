@@ -83,17 +83,19 @@ public class InfoManager {
         criteria.add(Restrictions.lt("createTime", end, true));
 
         List<ChannelBean> channels = infoQuery.getChannels();
+        if(channels != null && channels.size() > 0) {
+            LogicalExpression[] logicalExpressionList = new LogicalExpression[channels.size()];
+            for (int i = 0; i < logicalExpressionList.length; i++) {
+                ChannelBean channelBean = channels.get(i);
+                SimpleExpression s1 = Restrictions.eq("original", channelBean.getOriginal(), true);
+                LogicalExpression s2 = Restrictions.in("channel", channelBean.getChannel(), true);
 
-        LogicalExpression[] logicalExpressionList = new LogicalExpression[channels.size()];
-        for (int i = 0; i < logicalExpressionList.length; i++) {
-            ChannelBean channelBean = channels.get(i);
-            SimpleExpression s1 = Restrictions.eq("original", channelBean.getOriginal(), true);
-            LogicalExpression s2 = Restrictions.in("channel", channelBean.getChannel(), true);
-
-            LogicalExpression one = Restrictions.and(s1, s2);
-            logicalExpressionList[i] = one;
+                LogicalExpression one = Restrictions.and(s1, s2);
+                logicalExpressionList[i] = one;
+            }
+            criteria.add(Restrictions.or(logicalExpressionList));
         }
-        criteria.add(Restrictions.or(logicalExpressionList));
+        
 
         int page = 0;
         if (infoQuery.getPage() != null) {
