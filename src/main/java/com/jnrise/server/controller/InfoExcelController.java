@@ -10,7 +10,6 @@ import com.jnrise.server.manager.InfoManager;
 import com.jnrise.server.requestbody.InfoQuery;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -28,7 +27,7 @@ public class InfoExcelController {
     @Resource
     private InfoManager infoManager;
     
-    @GetMapping("download")
+    @RequestMapping("download")
     public void downloadByPoiBaseView(InfoQuery infoQuery, ModelMap map, HttpServletRequest request,
                                       HttpServletResponse response) {
         List<InfoExcel> list = infoManager.excel(infoQuery);
@@ -46,7 +45,7 @@ public class InfoExcelController {
      * @param infoQuery
      *         infoQuery
      */
-    @GetMapping("query")
+    @RequestMapping("query")
     @ResponseBody
     public InfoListData query(InfoQuery infoQuery) {
         return infoManager.query(infoQuery);
