@@ -22,6 +22,7 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author wuweifeng wrote on 2018/4/12.
@@ -30,6 +31,8 @@ import java.util.List;
 public class InfoManager {
     @Resource
     private InfoRepository infoRepository;
+    @Resource
+    private ChannelManager channelManager;
 
     public Info save(Info info) {
         if (existMobile(info.getPhone())) {
@@ -51,10 +54,13 @@ public class InfoManager {
             infoListData.setCode(-1);
             infoListData.setMessage("起始结束时间不能为空");
         } else {
+            Map<String, String> channels = channelManager.findName();
             Page<Info> infos = queryPage(infoQuery);
-            SimplePage<Info> simplePage = new SimplePage<>(infos.getTotalPages(), infos.getTotalElements(), infos
-                    .getContent
-                    ());
+            List<Info> infoList = infos.getContent();
+            for (Info info : infoList) {
+                info.setChannel(channels.get(info.getChannel()));
+            }
+            SimplePage<Info> simplePage = new SimplePage<>(infos.getTotalPages(), infos.getTotalElements(), infoList);
 
             infoListData.setCode(0);
             infoListData.setSimplePage(simplePage);
@@ -99,6 +105,8 @@ public class InfoManager {
         if (channels != null && channels.size() > 0) {
             LogicalExpression s2 = Restrictions.in("channel", channels, true);
             criteria.add(s2);
+        } else {
+            criteria.add(Restrictions.ne("channel", "test", true));
         }
 
         int page = 0;
