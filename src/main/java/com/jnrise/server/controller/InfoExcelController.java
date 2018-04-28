@@ -10,6 +10,7 @@ import com.jnrise.server.manager.InfoManager;
 import com.jnrise.server.requestbody.InfoQuery;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -28,7 +29,7 @@ public class InfoExcelController {
     private InfoManager infoManager;
     
     @RequestMapping("download")
-    public void downloadByPoiBaseView(InfoQuery infoQuery, ModelMap map, HttpServletRequest request,
+    public void downloadByPoiBaseView(@RequestBody InfoQuery infoQuery, ModelMap map, HttpServletRequest request,
                                       HttpServletResponse response) {
         List<InfoExcel> list = infoManager.excel(infoQuery);
         ExportParams params = new ExportParams("瑞思数据导出", "数据", ExcelType.XSSF);
@@ -47,7 +48,7 @@ public class InfoExcelController {
      */
     @RequestMapping("query")
     @ResponseBody
-    public InfoListData query(InfoQuery infoQuery) {
+    public InfoListData query(@RequestBody InfoQuery infoQuery) {
         return infoManager.query(infoQuery);
     }
 }

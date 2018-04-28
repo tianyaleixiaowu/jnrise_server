@@ -21,13 +21,13 @@ public class BaseUrlBean {
 
     public static void main(String[] args) {
         BaseUrlBean baseUrlBean = new BaseUrlBean();
-        baseUrlBean.setChannel("dxdx");
+        baseUrlBean.setChannel("shunfei");
         baseUrlBean.setOriginal("");
-        baseUrlBean.setType1(5 + "");
-        //for (int i = 1; i <= 50; i++) {
-            baseUrlBean.setType2(1 + "");
-            System.out.println("http://mm.jnrise.cn/loading/gMtz7R.html?sign=" + baseUrlBean.encrypt());
-        //}
+        baseUrlBean.setType1(4 + "");
+        for (int i = 51; i <= 60; i++) {
+            baseUrlBean.setType2(i + "");
+            System.out.println("https://mm.jnrise.cn:88/loading/gMtz7R.html?sign=" + baseUrlBean.encrypt());
+        }
 
     }
 
