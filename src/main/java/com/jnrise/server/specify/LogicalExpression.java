@@ -32,7 +32,9 @@ public class LogicalExpression implements Criterion {
                                  CriteriaBuilder builder) {
         List<Predicate> predicates = new ArrayList<>();
         for (Criterion aCriterion : this.criterion) {
-            predicates.add(aCriterion.toPredicate(root, query, builder));
+            if (aCriterion != null) {
+                predicates.add(aCriterion.toPredicate(root, query, builder));
+            }
         }
         switch (operator) {
             case OR:

@@ -1,6 +1,5 @@
 package com.jnrise.server.manager;
 
-import com.jnrise.server.bean.ChannelBean;
 import com.jnrise.server.bean.InfoListData;
 import com.jnrise.server.bean.SimplePage;
 import com.jnrise.server.excel.InfoExcel;
@@ -10,7 +9,6 @@ import com.jnrise.server.requestbody.InfoQuery;
 import com.jnrise.server.specify.Criteria;
 import com.jnrise.server.specify.LogicalExpression;
 import com.jnrise.server.specify.Restrictions;
-import com.jnrise.server.specify.SimpleExpression;
 import com.jnrise.server.util.CommonUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
@@ -54,7 +52,8 @@ public class InfoManager {
             infoListData.setMessage("起始结束时间不能为空");
         } else {
             Page<Info> infos = queryPage(infoQuery);
-            SimplePage<Info> simplePage = new SimplePage<>(infos.getTotalPages(), infos.getTotalElements(), infos.getContent
+            SimplePage<Info> simplePage = new SimplePage<>(infos.getTotalPages(), infos.getTotalElements(), infos
+                    .getContent
                     ());
 
             infoListData.setCode(0);
@@ -82,20 +81,25 @@ public class InfoManager {
         Date end = CommonUtil.dateOfStr(infoQuery.getEnd());
         criteria.add(Restrictions.lt("createTime", end, true));
 
-        List<ChannelBean> channels = infoQuery.getChannels();
-        if(channels != null && channels.size() > 0) {
-            LogicalExpression[] logicalExpressionList = new LogicalExpression[channels.size()];
-            for (int i = 0; i < logicalExpressionList.length; i++) {
-                ChannelBean channelBean = channels.get(i);
-                SimpleExpression s1 = Restrictions.eq("original", channelBean.getOriginal(), true);
-                LogicalExpression s2 = Restrictions.in("channel", channelBean.getChannel(), true);
+        List<String> channels = infoQuery.getChannels();
 
-                LogicalExpression one = Restrictions.and(s1, s2);
-                logicalExpressionList[i] = one;
-            }
-            criteria.add(Restrictions.or(logicalExpressionList));
+        //if(channels != null && channels.size() > 0) {
+        //    LogicalExpression[] logicalExpressionList = new LogicalExpression[channels.size()];
+        //    for (int i = 0; i < logicalExpressionList.length; i++) {
+        //        ChannelBean channelBean = channels.get(i);
+        //        SimpleExpression s1 = Restrictions.eq("original", channelBean.getOriginal(), true);
+        //        LogicalExpression s2 = Restrictions.in("channel", channelBean.getChannel(), true);
+        //
+        //        LogicalExpression one = Restrictions.and(s1, s2);
+        //        logicalExpressionList[i] = one;
+        //    }
+        //    criteria.add(Restrictions.or(logicalExpressionList));
+        //}
+
+        if (channels != null && channels.size() > 0) {
+            LogicalExpression s2 = Restrictions.in("channel", channels, true);
+            criteria.add(s2);
         }
-        
 
         int page = 0;
         if (infoQuery.getPage() != null) {

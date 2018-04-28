@@ -1,7 +1,5 @@
 package com.jnrise.server.requestbody;
 
-import com.jnrise.server.bean.ChannelBean;
-
 import java.util.List;
 
 /**
@@ -13,7 +11,9 @@ public class InfoQuery {
 
     private String end;
 
-    private List<ChannelBean> channels;
+    private String original;
+
+    private List<String> channels;
 
     private Integer page;
 
@@ -35,11 +35,19 @@ public class InfoQuery {
         this.end = end;
     }
 
-    public List<ChannelBean> getChannels() {
+    public String getOriginal() {
+        return original;
+    }
+
+    public void setOriginal(String original) {
+        this.original = original;
+    }
+
+    public List<String> getChannels() {
         return channels;
     }
 
-    public void setChannels(List<ChannelBean> channels) {
+    public void setChannels(List<String> channels) {
         this.channels = channels;
     }
 
