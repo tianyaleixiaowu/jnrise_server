@@ -17,6 +17,9 @@ public class MvcInterceptor extends HandlerInterceptorAdapter {
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
         String token = request.getHeader("token");
+        if (request.getRequestURI().contains("download")) {
+            return true;
+        }
         //如果是访问统计、下载Excel的接口，需要先登录
         if (request.getRequestURI().contains("excel")) {
             //没token，或token在缓存中找不到
