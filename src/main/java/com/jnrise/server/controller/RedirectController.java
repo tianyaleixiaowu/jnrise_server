@@ -25,7 +25,7 @@ public class RedirectController {
         Url url = urlManager.find(s);
         BaseUrlBean baseUrlBean = new BaseUrlBean();
         BeanUtils.copyProperties(url, baseUrlBean);
-        return "redirect:http://mm.jnrise.cn/loading/page-4.html?sign=" + baseUrlBean.encrypt();
+        return "redirect:https://mm.jnrise.cn:88/loading/xto4ete.html?sign=" + baseUrlBean.encrypt();
     }
 
 
