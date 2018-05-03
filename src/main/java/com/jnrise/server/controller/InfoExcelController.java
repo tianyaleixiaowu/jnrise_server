@@ -29,7 +29,7 @@ public class InfoExcelController {
     private InfoManager infoManager;
     
     @RequestMapping("download")
-    public void downloadByPoiBaseView(@RequestBody InfoQuery infoQuery, ModelMap map, HttpServletRequest request,
+    public void downloadByPoiBaseView(InfoQuery infoQuery, ModelMap map, HttpServletRequest request,
                                       HttpServletResponse response) {
         List<InfoExcel> list = infoManager.excel(infoQuery);
         ExportParams params = new ExportParams("瑞思数据导出", "数据", ExcelType.XSSF);
