@@ -15,9 +15,19 @@ public class InfoQuery {
 
     private List<String> channels;
 
+    private String channelsStr;
+
     private Integer page;
 
     private Integer size;
+
+    public String getChannelsStr() {
+        return channelsStr;
+    }
+
+    public void setChannelsStr(String channelsStr) {
+        this.channelsStr = channelsStr;
+    }
 
     public String getBegin() {
         return begin;

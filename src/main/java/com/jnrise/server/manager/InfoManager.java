@@ -19,10 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author wuweifeng wrote on 2018/4/12.
@@ -88,7 +85,11 @@ public class InfoManager {
         criteria.add(Restrictions.lt("createTime", end, true));
 
         List<String> channels = infoQuery.getChannels();
-
+        String channelsStr = infoQuery.getChannelsStr();
+        if (channelsStr != null) {
+            String[] cc = channelsStr.split(",");
+            channels = new ArrayList<>(Arrays.asList(cc));
+        }
         //if(channels != null && channels.size() > 0) {
         //    LogicalExpression[] logicalExpressionList = new LogicalExpression[channels.size()];
         //    for (int i = 0; i < logicalExpressionList.length; i++) {
