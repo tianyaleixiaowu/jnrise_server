@@ -35,6 +35,10 @@ public class Info extends BaseEntity {
      * 校区
      */
     private String school;
+    /**
+     * 是否在读（0在读，1不在，null不填）
+     */
+    private Byte read;
 
     @Override
     public String toString() {
@@ -44,7 +48,16 @@ public class Info extends BaseEntity {
                 ", age=" + age +
                 ", gender=" + gender +
                 ", school='" + school + '\'' +
+                ", read=" + read +
                 '}';
+    }
+
+    public Byte getRead() {
+        return read;
+    }
+
+    public void setRead(Byte read) {
+        this.read = read;
     }
 
     public String getName() {
