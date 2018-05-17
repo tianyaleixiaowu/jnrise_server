@@ -38,7 +38,7 @@ public class Info extends BaseEntity {
     /**
      * 是否在读（0在读，1不在，null不填）
      */
-    private Byte read;
+    private Byte inRead;
 
     @Override
     public String toString() {
@@ -48,16 +48,16 @@ public class Info extends BaseEntity {
                 ", age=" + age +
                 ", gender=" + gender +
                 ", school='" + school + '\'' +
-                ", read=" + read +
+                ", inRead=" + inRead +
                 '}';
     }
 
-    public Byte getRead() {
-        return read;
+    public Byte getInRead() {
+        return inRead;
     }
 
-    public void setRead(Byte read) {
-        this.read = read;
+    public void setInRead(Byte inRead) {
+        this.inRead = inRead;
     }
 
     public String getName() {
