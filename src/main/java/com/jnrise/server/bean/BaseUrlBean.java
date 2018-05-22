@@ -21,11 +21,11 @@ public class BaseUrlBean {
 
     public static void main(String[] args) {
         BaseUrlBean baseUrlBean = new BaseUrlBean();
-        baseUrlBean.setChannel("test");
+        baseUrlBean.setChannel("jnrise");
         baseUrlBean.setOriginal("0531");
-        baseUrlBean.setType1(0 + "");
+        baseUrlBean.setType1(1 + "");
         //for (int i = 1; i <= 10; i++) {
-            baseUrlBean.setType2(0 + "");
+            baseUrlBean.setType2(1 + "");
             System.out.println("https://mm.jnrise.cn:88/loading/jtao11xi.html?sign=" + baseUrlBean.encrypt());
         //}
 

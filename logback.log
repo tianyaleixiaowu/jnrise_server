@@ -1,174 +1,44 @@
-2018-05-17 10:24:06.377  INFO 94847 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 94847 (started by wuwf in /Users/wuwf/project/landing_page)
-2018-05-17 10:24:06.413  INFO 94847 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
-2018-05-17 10:24:06.478  INFO 94847 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@34129c78: startup date [Thu May 17 10:24:06 CST 2018]; root of context hierarchy
-2018-05-17 10:24:08.781  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$610a9cf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:08.999  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$aa1cd311] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.057  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$9e9097b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.411  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.460  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.504  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.515  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$d05730fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.586  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:09.593  INFO 94847 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 10:24:10.194  INFO 94847 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-05-17 10:24:10.240  INFO 94847 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-05-22 16:14:43.718  INFO 1167 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 1167 (started by wuwf in /Users/wuwf/project/landing_page)
+2018-05-22 16:14:43.738  INFO 1167 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
+2018-05-22 16:14:43.800  INFO 1167 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@53f3bdbd: startup date [Tue May 22 16:14:43 CST 2018]; root of context hierarchy
+2018-05-22 16:14:46.162  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e17f63ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.242  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2a9199cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.285  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$1f055e70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.315  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.354  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.372  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.381  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$50cbf7b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.405  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.407  INFO 1167 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-22 16:14:46.731  INFO 1167 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-22 16:14:46.764  INFO 1167 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-05-17 10:24:10.609  INFO 94847 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-05-17 10:24:10.615  INFO 94847 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-05-17 10:24:10.744  INFO 94847 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-05-17 10:24:11.295  INFO 94847 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-05-17 10:24:12.381  INFO 94847 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-05-17 10:24:12.405  INFO 94847 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-05-17 10:24:13.548  WARN 94847 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
-
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:580) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892) [hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1761) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$121/1094674892.getObject(Unknown Source) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089) [spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:859) [spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138) [spring-boot-test-2.0.1.RELEASE.jar:2.0.1.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'read tinyint' at line 1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_40]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_40]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_40]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_40]
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2440) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-2.7.8.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-2.7.8.jar:na]
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.2.16.Final.jar:5.2.16.Final]
-	... 61 common frames omitted
-
-2018-05-17 10:24:13.602  INFO 94847 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-05-17 10:24:15.330  INFO 94847 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-05-17 10:24:15.752  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@34129c78: startup date [Thu May 17 10:24:06 CST 2018]; root of context hierarchy
-2018-05-17 10:24:15.838  WARN 94847 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-05-17 10:24:15.898  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-05-17 10:24:15.900  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add()
-2018-05-17 10:24:15.904  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-05-17 10:24:15.910  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-05-17 10:24:15.913  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-05-17 10:24:15.914  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-05-17 10:24:15.916  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-05-17 10:24:15.917  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-05-17 10:24:15.918  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-05-17 10:24:15.923  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-05-17 10:24:15.924  INFO 94847 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-05-17 10:24:15.977  INFO 94847 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-05-17 10:24:15.977  INFO 94847 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-05-17 10:24:16.625  INFO 94847 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 10.843 seconds (JVM running for 12.185)
-2018-05-17 10:24:16.836  INFO 94847 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@34129c78: startup date [Thu May 17 10:24:06 CST 2018]; root of context hierarchy
-2018-05-17 10:24:16.844  INFO 94847 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2018-05-17 10:24:16.846  INFO 94847 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-05-17 10:24:16.859  INFO 94847 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-05-17 14:10:33.436  INFO 98444 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 98444 (started by wuwf in /Users/wuwf/project/landing_page)
-2018-05-17 14:10:33.438  INFO 98444 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
-2018-05-17 14:10:33.567  INFO 98444 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@76b07f29: startup date [Thu May 17 14:10:33 CST 2018]; root of context hierarchy
-2018-05-17 14:10:35.698  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b71e33da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.760  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$3069f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.797  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$f4a42e9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.830  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.868  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.885  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.907  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$266ac7e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.973  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:35.977  INFO 98444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-05-17 14:10:36.385  INFO 98444 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-05-17 14:10:36.425  INFO 98444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-05-17 14:10:36.722  INFO 98444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-05-17 14:10:36.725  INFO 98444 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-05-17 14:10:36.805  INFO 98444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-05-17 14:10:37.094  INFO 98444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-05-17 14:10:37.881  INFO 98444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-05-17 14:10:37.921  INFO 98444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-05-17 14:10:39.747  INFO 98444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-05-17 14:10:41.695  INFO 98444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-05-17 14:10:42.174  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@76b07f29: startup date [Thu May 17 14:10:33 CST 2018]; root of context hierarchy
-2018-05-17 14:10:42.277  WARN 98444 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-05-17 14:10:42.359  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-05-17 14:10:42.361  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add()
-2018-05-17 14:10:42.366  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-05-17 14:10:42.368  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-05-17 14:10:42.369  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-05-17 14:10:42.370  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-05-17 14:10:42.372  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-05-17 14:10:42.374  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-05-17 14:10:42.375  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-05-17 14:10:42.380  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-05-17 14:10:42.381  INFO 98444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-05-17 14:10:42.448  INFO 98444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-05-17 14:10:42.448  INFO 98444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-05-17 14:10:43.259  INFO 98444 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 10.38 seconds (JVM running for 11.713)
-2018-05-17 14:10:43.564  INFO 98444 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@76b07f29: startup date [Thu May 17 14:10:33 CST 2018]; root of context hierarchy
-2018-05-17 14:10:43.572  INFO 98444 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2018-05-17 14:10:43.573  INFO 98444 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-05-17 14:10:43.587  INFO 98444 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-22 16:14:47.000  INFO 1167 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-05-22 16:14:47.003  INFO 1167 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-22 16:14:47.074  INFO 1167 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-22 16:14:47.264  INFO 1167 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-22 16:14:48.077  INFO 1167 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-22 16:14:48.101  INFO 1167 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-05-22 16:14:49.309  INFO 1167 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-22 16:14:51.023  INFO 1167 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-22 16:14:51.449  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@53f3bdbd: startup date [Tue May 22 16:14:43 CST 2018]; root of context hierarchy
+2018-05-22 16:14:51.538  WARN 1167 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-22 16:14:51.609  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
+2018-05-22 16:14:51.612  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add()
+2018-05-22 16:14:51.615  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
+2018-05-22 16:14:51.618  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
+2018-05-22 16:14:51.622  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
+2018-05-22 16:14:51.623  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-22 16:14:51.624  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
+2018-05-22 16:14:51.625  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
+2018-05-22 16:14:51.626  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-05-22 16:14:51.631  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-22 16:14:51.635  INFO 1167 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-22 16:14:51.697  INFO 1167 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-22 16:14:51.698  INFO 1167 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-22 16:14:52.274  INFO 1167 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 9.129 seconds (JVM running for 10.378)
+2018-05-22 16:14:52.465  INFO 1167 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@53f3bdbd: startup date [Tue May 22 16:14:43 CST 2018]; root of context hierarchy
+2018-05-22 16:14:52.473  INFO 1167 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-22 16:14:52.474  INFO 1167 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-22 16:14:52.486  INFO 1167 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
