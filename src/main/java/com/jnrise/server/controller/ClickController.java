@@ -18,8 +18,7 @@ public class ClickController {
     private ClickManager clickManager;
 
     @RequestMapping
-    public BaseData add() {
-        Click click = new Click();
+    public BaseData add(Click click) {
         clickManager.save(click);
         return new BaseData(0, "");
     }
