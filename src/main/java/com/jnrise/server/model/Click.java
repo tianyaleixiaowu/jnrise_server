@@ -12,6 +12,10 @@ import javax.persistence.Table;
 @Table(name = "click")
 public class Click extends BaseEntity {
     private String uuid;
+    /**
+     * 1 mobile  0 web
+     */
+    private byte deviceType;
 
     public String getUuid() {
         return uuid;
@@ -19,5 +23,13 @@ public class Click extends BaseEntity {
 
     public void setUuid(String uuid) {
         this.uuid = uuid;
+    }
+
+    public byte getDeviceType() {
+        return deviceType;
+    }
+
+    public void setDeviceType(byte deviceType) {
+        this.deviceType = deviceType;
     }
 }
