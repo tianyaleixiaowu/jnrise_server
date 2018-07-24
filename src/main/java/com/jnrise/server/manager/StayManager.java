@@ -3,8 +3,10 @@ package com.jnrise.server.manager;
 import com.jnrise.server.model.Stay;
 import com.jnrise.server.repository.StayRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author wuweifeng wrote on 2018/7/24.
@@ -15,7 +17,14 @@ public class StayManager {
     private StayRepository stayRepository;
 
     public Stay add(Stay stay) {
-        return stayRepository.save(stay);
+        List<Stay> stays = stayRepository.findByUserId(stay.getUserId());
+        if (CollectionUtils.isEmpty(stays)) {
+            return stayRepository.save(stay);
+        } else {
+            Stay stay1 = stays.get(0);
+            stay1.setTotalTime(stay.getTotalTime());
+            return stayRepository.save(stay1);
+        }
     }
 
 }

@@ -14,6 +14,16 @@ public class Stay extends BaseEntity {
 
     private String userId;
 
+    private Integer totalTime;
+
+    public Integer getTotalTime() {
+        return totalTime;
+    }
+
+    public void setTotalTime(Integer totalTime) {
+        this.totalTime = totalTime;
+    }
+
     public String getUrl() {
         return url;
     }
