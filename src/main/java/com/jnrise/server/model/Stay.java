@@ -15,6 +15,15 @@ public class Stay extends BaseEntity {
     private String userId;
 
     private Integer totalTime;
+    private String otherInfo;
+
+    public String getOtherInfo() {
+        return otherInfo;
+    }
+
+    public void setOtherInfo(String otherInfo) {
+        this.otherInfo = otherInfo;
+    }
 
     public Integer getTotalTime() {
         return totalTime;
