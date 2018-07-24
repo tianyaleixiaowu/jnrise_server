@@ -82,7 +82,7 @@ public class BaseUrlBean {
         baseUrlBean.setChannel(array[0]);
         baseUrlBean.setOriginal(array[1]);
         baseUrlBean.setType1(array[2]);
-        baseUrlBean.setType1(array[3]);
+        baseUrlBean.setType2(array[3]);
         System.out.println("https://mm.jnrise.cn/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
     }
 
