@@ -20,15 +20,70 @@ public class BaseUrlBean {
     private String type2;
 
     public static void main(String[] args) {
-        BaseUrlBean baseUrlBean = new BaseUrlBean();
-        baseUrlBean.setChannel("shunfei");
-        baseUrlBean.setOriginal("");
-        baseUrlBean.setType1(10 + "");
-        for (int i = 1; i <= 30; i++) {
-            baseUrlBean.setType2(i + "");
-            System.out.println("https://mm.jnrise.cn:88/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
+        //BaseUrlBean baseUrlBean = new BaseUrlBean();
+        //baseUrlBean.setChannel("xhl_2693_jiushu_h5");
+        //baseUrlBean.setOriginal("");
+        //baseUrlBean.setType1("b");
+        //for (int i = 1; i <= 30; i++) {
+        //    baseUrlBean.setType2(0 + "");
+        //    System.out.println("https://mm.jnrise.cn:88/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
+        //}
+        String s = "channel=xhl&original=1331&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=1685&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=1942&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2013&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2065&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2394&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2410&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2532&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2615&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2616&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2643&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2645&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2646&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2647&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2693&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2843&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=2847&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=3354&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=3381&type1=dianji_180722&type2=a\n" +
+                "channel=xhl&original=1331&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=1685&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=1942&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2013&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2065&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2394&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2410&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2532&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2615&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2616&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2643&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2645&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2646&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2647&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2693&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2843&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=2847&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=3354&type1=dianji_180722&type2=b\n" +
+                "channel=xhl&original=3381&type1=dianji_180722&type2=b";
+        String[] array = s.split("\n");
+        for (String ss : array) {
+            deal(ss);
         }
+    }
 
+    public static void deal(String s) {
+        String[] array = s.replace("channel=","")
+                .replace("original=","")
+                .replace("type1=","")
+                .replace("type2=", "").split("&");
+
+        BaseUrlBean baseUrlBean = new BaseUrlBean();
+        baseUrlBean.setChannel(array[0]);
+        baseUrlBean.setOriginal(array[1]);
+        baseUrlBean.setType1(array[2]);
+        baseUrlBean.setType1(array[3]);
+        System.out.println("https://mm.jnrise.cn/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
     }
 
     /**
