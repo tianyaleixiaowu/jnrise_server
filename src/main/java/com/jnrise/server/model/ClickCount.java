@@ -15,17 +15,19 @@ public class ClickCount extends BaseEntity {
     private String url;
 
     private String userId;
+    /**
+     * 坐标
+     */
+    private String coordinate;
 
     private String otherInfo;
 
-    private int totalCount;
-
-    public int getTotalCount() {
-        return totalCount;
+    public String getCoordinate() {
+        return coordinate;
     }
 
-    public void setTotalCount(int totalCount) {
-        this.totalCount = totalCount;
+    public void setCoordinate(String coordinate) {
+        this.coordinate = coordinate;
     }
 
     public String getOtherInfo() {
