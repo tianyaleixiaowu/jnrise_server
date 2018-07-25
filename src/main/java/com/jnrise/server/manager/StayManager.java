@@ -2,6 +2,7 @@ package com.jnrise.server.manager;
 
 import com.jnrise.server.model.Stay;
 import com.jnrise.server.repository.StayRepository;
+import com.jnrise.server.util.CommonUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -23,6 +24,7 @@ public class StayManager {
         } else {
             Stay stay1 = stays.get(0);
             stay1.setTotalTime(stay.getTotalTime());
+            stay1.setUpdateTime(CommonUtil.getNow());
             return stayRepository.save(stay1);
         }
     }
