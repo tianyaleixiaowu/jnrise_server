@@ -12,8 +12,6 @@ import javax.persistence.*;
 public class Stay extends BaseEntity {
     private String url;
 
-    private String userId;
-
     private Integer totalTime;
     private String otherInfo;
 
@@ -41,11 +39,4 @@ public class Stay extends BaseEntity {
         this.url = url;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 }

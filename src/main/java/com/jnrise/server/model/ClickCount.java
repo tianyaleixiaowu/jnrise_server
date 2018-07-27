@@ -14,7 +14,6 @@ import javax.persistence.Table;
 public class ClickCount extends BaseEntity {
     private String url;
 
-    private String userId;
     /**
      * 坐标
      */
@@ -46,11 +45,4 @@ public class ClickCount extends BaseEntity {
         this.url = url;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 }

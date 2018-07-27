@@ -28,6 +28,8 @@ public class BaseEntity {
 
     private String company;
 
+    private String userId;
+
     private Date createTime = new Date();
 
     private Date updateTime = new Date();
@@ -59,6 +61,7 @@ public class BaseEntity {
                 ", type1='" + type1 + '\'' +
                 ", type2='" + type2 + '\'' +
                 ", company=" + company +
+                ", userId=" + userId +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';
@@ -74,6 +77,14 @@ public class BaseEntity {
 
     public void setCompany(String company) {
         this.company = company;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public Date getCreateTime() {
