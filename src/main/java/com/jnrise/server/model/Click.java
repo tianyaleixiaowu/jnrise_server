@@ -16,6 +16,10 @@ public class Click extends BaseEntity {
      * 1 mobile  0 web
      */
     private byte deviceType;
+    /**
+     * text-click 1,text-change 2,button-click 3
+     */
+    private byte clickType;
 
     public String getUuid() {
         return uuid;
@@ -23,6 +27,14 @@ public class Click extends BaseEntity {
 
     public void setUuid(String uuid) {
         this.uuid = uuid;
+    }
+
+    public byte getClickType() {
+        return clickType;
+    }
+
+    public void setClickType(byte clickType) {
+        this.clickType = clickType;
     }
 
     public byte getDeviceType() {
