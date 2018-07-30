@@ -15,11 +15,11 @@ public class ClickManager {
     private ClickRepository clickRepository;
 
     public Click save(Click click) {
-        Click click1 = clickRepository.findByUuid(click.getUuid());
-        if (click1 == null) {
+        //Click click1 = clickRepository.findByUuid(click.getUuid());
+        //if (click1 == null) {
             return clickRepository.save(click);
-        } else {
-            return click1;
-        }
+        //} else {
+        //    return click1;
+        //}
     }
 }
