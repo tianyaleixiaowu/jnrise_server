@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.stereotype.Component;
 
-/**
+/**                 
  * @author wuweifeng on 2018/3/13.
  */
 @Component
