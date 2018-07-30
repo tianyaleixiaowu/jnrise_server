@@ -20,6 +20,15 @@ public class Click extends BaseEntity {
      * text-click 1,text-change 2,button-click 3
      */
     private byte clickType;
+    private String otherInfo;
+
+    public String getOtherInfo() {
+        return otherInfo;
+    }
+
+    public void setOtherInfo(String otherInfo) {
+        this.otherInfo = otherInfo;
+    }
 
     public String getUuid() {
         return uuid;
