@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "click_count")
 public class ClickCount extends BaseEntity {
-    private String url;
 
     /**
      * 坐标
@@ -35,14 +34,6 @@ public class ClickCount extends BaseEntity {
 
     public void setOtherInfo(String otherInfo) {
         this.otherInfo = otherInfo;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 
 }

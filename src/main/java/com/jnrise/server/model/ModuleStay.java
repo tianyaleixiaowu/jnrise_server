@@ -11,8 +11,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "module_stay")
 public class ModuleStay extends BaseEntity {
-    private String url;
-    private String param;
 
     private Integer totalTime;
 
@@ -40,13 +38,6 @@ public class ModuleStay extends BaseEntity {
         this.totalTime = totalTime;
     }
 
-    public String getParam() {
-        return param;
-    }
-
-    public void setParam(String param) {
-        this.param = param;
-    }
 
     public Integer getDeviceType() {
         return deviceType;
@@ -62,14 +53,6 @@ public class ModuleStay extends BaseEntity {
 
     public void setFlag(Integer flag) {
         this.flag = flag;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 
 }

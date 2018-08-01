@@ -30,6 +30,9 @@ public class BaseEntity {
 
     private String userId;
 
+    private String url;
+    private String param;
+
     private Date createTime = new Date();
 
     private Date updateTime = new Date();
@@ -65,6 +68,22 @@ public class BaseEntity {
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getParam() {
+        return param;
+    }
+
+    public void setParam(String param) {
+        this.param = param;
     }
 
     public String getSign() {

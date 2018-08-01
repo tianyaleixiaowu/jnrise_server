@@ -28,42 +28,37 @@ public class BaseUrlBean {
         //    baseUrlBean.setType2(0 + "");
         //    System.out.println("https://mm.jnrise.cn:88/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
         //}
-        String s = "channel=xhl&original=1331&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=1685&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=1942&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2013&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2065&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2394&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2410&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2532&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2615&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2616&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2643&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2645&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2646&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2647&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2843&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=2847&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=3354&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=3381&type1=putou_180727&type2=xueke\n" +
-                "channel=xhl&original=1331&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=1685&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=1942&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2013&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2065&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2394&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2410&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2532&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2615&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2616&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2643&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2645&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2646&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2647&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2843&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=2847&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=3354&type1=dianji_180727&type2=xueke\n" +
-                "channel=xhl&original=3381&type1=dianji_180727&type2=xueke";
+        String s = "channel=xhl&original=1331&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=1681&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=1685&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=1942&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2013&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2065&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2127&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2128&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2394&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2408&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2410&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2509&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2532&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2562&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2564&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2566&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2567&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2568&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2615&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2616&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2643&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2645&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2646&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2647&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2843&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2847&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=2848&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=3354&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=3357&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=3358&type1=dianji&type2=xueke_tc\n" +
+                "channel=xhl&original=3381&type1=dianji&type2=xueke_tc";
         String[] array = s.split("\n");
         for (String ss : array) {
             deal(ss);

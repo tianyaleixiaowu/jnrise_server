@@ -10,8 +10,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "stay")
 public class Stay extends BaseEntity {
-    private String url;
-
     private Integer totalTime;
     private String otherInfo;
 
@@ -29,14 +27,6 @@ public class Stay extends BaseEntity {
 
     public void setTotalTime(Integer totalTime) {
         this.totalTime = totalTime;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 
 }
