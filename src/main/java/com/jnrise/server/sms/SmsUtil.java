@@ -34,7 +34,7 @@ public class SmsUtil {
             return baseData;
         } else {
             baseData.setCode(-1);
-            baseData.setMessage("发送失败");
+            baseData.setMessage(r.getMsg() + "\n" + r.getDetail());
             return baseData;
         }
     }
