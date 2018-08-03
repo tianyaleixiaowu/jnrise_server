@@ -25,7 +25,7 @@ public class SmsUtil {
         int code = randomInt(1001, 9999);
 
         BaseData baseData = new BaseData();
-        param.put(YunpianClient.TEXT, "【麦盟科技】您注册瑞思学科英语的验证码是" + code + "。如非本人操作，请忽略本短信");
+        param.put(YunpianClient.TEXT, "【麦盟科技】您预约的课程验证码是" + code);
         Result<SmsSingleSend> r = yunpianClient.sms().single_send(param);
         //获取返回结果，返回码:r.getCode(),返回码描述:r.getMsg(),API结果:r.getData(),其他说明:r.getDetail(),调用异常:r.getThrowable()
         if (r.getCode() == 0) {
