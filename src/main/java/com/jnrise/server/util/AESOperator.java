@@ -70,7 +70,7 @@ public class AESOperator {
 
     public static void main(String[] args) {
         // 需要加密的字串
-        String cSrc = "测试hefgegeghrthtyjtjukyu";
+        String cSrc = "xhl,3354,dianji_180722,d";
         // 加密
         long lStart = System.currentTimeMillis();
         String enString = AESOperator.getInstance().encrypt(cSrc);
