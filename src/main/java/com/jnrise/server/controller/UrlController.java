@@ -19,7 +19,7 @@ public class UrlController {
     }
 
     private static String deal(BaseUrlBean baseUrlBean) {
-        String ss = "https://mm.jnrise.cn/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt();
+        String ss = baseUrlBean.encrypt();
         System.out.println(ss);
         return ss;
     }

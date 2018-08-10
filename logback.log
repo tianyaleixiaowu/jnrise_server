@@ -1,502 +1,55 @@
-2018-08-09 16:26:59.112  INFO 36790 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 36790 (started by wuwf in /Users/wuwf/project/landing_page)
-2018-08-09 16:26:59.133  INFO 36790 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
-2018-08-09 16:26:59.185  INFO 36790 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3aa078fd: startup date [Thu Aug 09 16:26:59 CST 2018]; root of context hierarchy
-2018-08-09 16:27:01.365  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$610a9cf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.421  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$aa1cd311] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.450  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$9e9097b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.472  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.491  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.506  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.515  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$d05730fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.533  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.534  INFO 36790 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 16:27:01.863  INFO 36790 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-09 16:27:01.891  INFO 36790 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-08-10 12:44:11.354  INFO 48798 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 48798 (started by wuwf in /Users/wuwf/project/landing_page)
+2018-08-10 12:44:11.360  INFO 48798 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
+2018-08-10 12:44:11.431  INFO 48798 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d23e042: startup date [Fri Aug 10 12:44:11 CST 2018]; root of context hierarchy
+2018-08-10 12:44:13.753  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2caeb1a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.808  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$75c0e7bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.838  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$6a34ac63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.866  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.894  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.911  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.920  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$9bfb45ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.941  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:13.945  INFO 48798 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-10 12:44:14.258  INFO 48798 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-10 12:44:14.293  INFO 48798 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-08-09 16:27:02.150  INFO 36790 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-08-09 16:27:02.154  INFO 36790 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-09 16:27:02.219  INFO 36790 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-09 16:27:02.390  INFO 36790 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-09 16:27:02.935  INFO 36790 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-09 16:27:02.956  INFO 36790 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-08-09 16:27:04.156  INFO 36790 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-09 16:27:05.435  INFO 36790 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 16:27:05.436  INFO 36790 --- [main] com.yunpian.sdk.YunpianConf              : load default yunpian.properties
-2018-08-09 16:27:05.437  INFO 36790 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 16:27:05.597  INFO 36790 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 16:27:05.598  INFO 36790 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 16:27:05.603  INFO 36790 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 16:27:06.038  INFO 36790 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 16:27:06.721  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3aa078fd: startup date [Thu Aug 09 16:26:59 CST 2018]; root of context hierarchy
-2018-08-09 16:27:06.809  WARN 36790 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-09 16:27:06.870  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-08-09 16:27:06.873  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add(com.jnrise.server.model.Click)
-2018-08-09 16:27:06.877  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clickCount]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickCountController.add(com.jnrise.server.model.ClickCount)
-2018-08-09 16:27:06.883  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-08-09 16:27:06.885  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-08-09 16:27:06.886  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-08-09 16:27:06.888  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 16:27:06.890  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-08-09 16:27:06.892  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-08-09 16:27:06.895  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/moduleStay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ModuleStayController.add(com.jnrise.server.model.ModuleStay)
-2018-08-09 16:27:06.897  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-08-09 16:27:06.898  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sms]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.SmsController.sms(java.lang.String)
-2018-08-09 16:27:06.901  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.StayController.add(com.jnrise.server.model.Stay)
-2018-08-09 16:27:06.902  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encode]}" onto public java.lang.String com.jnrise.server.controller.UrlController.encode(java.lang.String)
-2018-08-09 16:27:06.907  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-09 16:27:06.909  INFO 36790 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 16:27:06.962  INFO 36790 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 16:27:06.963  INFO 36790 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 16:27:07.487  INFO 36790 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 8.959 seconds (JVM running for 10.009)
-2018-08-09 16:27:07.731  INFO 36790 --- [Thread-2] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 16:27:07.737  INFO 36790 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-08-09 16:27:07.754  INFO 36790 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-08-09 17:19:26.143  INFO 37898 --- [main] c.jnrise.server.LandingPageApplication   : Starting LandingPageApplication on weifengdeMacBook-Pro.local with PID 37898 (/Users/wuwf/project/landing_page/target/classes started by wuwf in /Users/wuwf/project/landing_page)
-2018-08-09 17:19:26.151  INFO 37898 --- [main] c.jnrise.server.LandingPageApplication   : No active profile set, falling back to default profiles: default
-2018-08-09 17:19:26.266  INFO 37898 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@384ad17b: startup date [Thu Aug 09 17:19:26 CST 2018]; root of context hierarchy
-2018-08-09 17:19:29.545  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2006fcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.624  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fb12a5eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.651  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$ef866a8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.675  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.700  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.730  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.746  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$214d03d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.787  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:29.789  INFO 37898 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:19:30.336  INFO 37898 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-08-09 17:19:30.382  INFO 37898 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-08-09 17:19:30.382  INFO 37898 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2018-08-09 17:19:30.388  INFO 37898 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wuwf/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-08-09 17:19:30.606  INFO 37898 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-08-09 17:19:30.609  INFO 37898 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4344 ms
-2018-08-09 17:19:30.782  INFO 37898 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-08-09 17:19:30.786  INFO 37898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-08-09 17:19:30.787  INFO 37898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-08-09 17:19:30.787  INFO 37898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-08-09 17:19:30.787  INFO 37898 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-08-09 17:19:31.000  INFO 37898 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:19:31.016  INFO 37898 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-08-09 17:19:31.110  INFO 37898 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-08-09 17:19:31.112  INFO 37898 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-09 17:19:31.157  INFO 37898 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-09 17:19:31.460  INFO 37898 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-09 17:19:32.007  INFO 37898 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-09 17:19:32.034  INFO 37898 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-08-09 17:19:32.904  INFO 37898 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:19:34.086  INFO 37898 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:19:34.087  INFO 37898 --- [main] com.yunpian.sdk.YunpianConf              : load default yunpian.properties
-2018-08-09 17:19:34.088  INFO 37898 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:19:34.220  INFO 37898 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:19:34.220  INFO 37898 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:19:34.224  INFO 37898 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:19:34.355  INFO 37898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:19:34.805  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@384ad17b: startup date [Thu Aug 09 17:19:26 CST 2018]; root of context hierarchy
-2018-08-09 17:19:34.889  WARN 37898 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-09 17:19:34.925  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-08-09 17:19:34.928  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add(com.jnrise.server.model.Click)
-2018-08-09 17:19:34.929  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clickCount]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickCountController.add(com.jnrise.server.model.ClickCount)
-2018-08-09 17:19:34.931  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-08-09 17:19:34.932  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-08-09 17:19:34.933  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-08-09 17:19:34.934  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:19:34.935  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-08-09 17:19:34.936  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-08-09 17:19:34.937  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/moduleStay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ModuleStayController.add(com.jnrise.server.model.ModuleStay)
-2018-08-09 17:19:34.938  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-08-09 17:19:34.939  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sms]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.SmsController.sms(java.lang.String)
-2018-08-09 17:19:34.940  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.StayController.add(com.jnrise.server.model.Stay)
-2018-08-09 17:19:34.941  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encode]}" onto public java.lang.String com.jnrise.server.controller.UrlController.encode(java.lang.String)
-2018-08-09 17:19:34.943  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-09 17:19:34.944  INFO 37898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:19:35.035  INFO 37898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:19:35.035  INFO 37898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:19:35.765  INFO 37898 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-08-09 17:19:35.768  INFO 37898 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
-2018-08-09 17:19:35.781  INFO 37898 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2018-08-09 17:19:35.853  INFO 37898 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-08-09 17:19:35.859  INFO 37898 --- [main] c.jnrise.server.LandingPageApplication   : Started LandingPageApplication in 10.764 seconds (JVM running for 12.019)
-2018-08-09 17:20:05.146  INFO 37898 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-08-09 17:20:05.147  INFO 37898 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2018-08-09 17:20:05.168  INFO 37898 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
-2018-08-09 17:20:05.249 ERROR 37898 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: 1] with root cause
-
-java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.jnrise.server.controller.UrlController.deal(UrlController.java:35) ~[classes/:na]
-	at com.jnrise.server.controller.UrlController.encode(UrlController.java:20) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_40]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_40]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_40]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_40]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
-
-2018-08-09 17:20:49.249  INFO 37898 --- [Thread-25] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@384ad17b: startup date [Thu Aug 09 17:19:26 CST 2018]; root of context hierarchy
-2018-08-09 17:20:49.256  INFO 37898 --- [Thread-25] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:20:49.261  INFO 37898 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-08-09 17:20:49.280  INFO 37898 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-08-09 17:20:56.616  INFO 37941 --- [main] c.jnrise.server.LandingPageApplication   : Starting LandingPageApplication on weifengdeMacBook-Pro.local with PID 37941 (/Users/wuwf/project/landing_page/target/classes started by wuwf in /Users/wuwf/project/landing_page)
-2018-08-09 17:20:56.620  INFO 37941 --- [main] c.jnrise.server.LandingPageApplication   : No active profile set, falling back to default profiles: default
-2018-08-09 17:20:56.709  INFO 37941 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2421cc4: startup date [Thu Aug 09 17:20:56 CST 2018]; root of context hierarchy
-2018-08-09 17:20:58.395  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2cd0797a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.440  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$75e2af98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.456  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$6a56743c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.475  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.489  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.500  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.505  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$9c1d0d84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.517  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.518  INFO 37941 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:20:58.818  INFO 37941 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-08-09 17:20:58.843  INFO 37941 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-08-09 17:20:58.844  INFO 37941 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2018-08-09 17:20:58.849  INFO 37941 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wuwf/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-08-09 17:20:58.952  INFO 37941 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-08-09 17:20:58.952  INFO 37941 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2244 ms
-2018-08-09 17:20:59.164  INFO 37941 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-08-09 17:20:59.175  INFO 37941 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-08-09 17:20:59.175  INFO 37941 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-08-09 17:20:59.175  INFO 37941 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-08-09 17:20:59.176  INFO 37941 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-08-09 17:20:59.376  INFO 37941 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:20:59.390  INFO 37941 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-08-09 17:20:59.484  INFO 37941 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-08-09 17:20:59.485  INFO 37941 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-09 17:20:59.650  INFO 37941 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-09 17:20:59.800  INFO 37941 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-09 17:21:00.305  INFO 37941 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-09 17:21:00.318  INFO 37941 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-08-09 17:21:01.316  INFO 37941 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:21:02.151  INFO 37941 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:21:02.151  INFO 37941 --- [main] com.yunpian.sdk.YunpianConf              : load default yunpian.properties
-2018-08-09 17:21:02.152  INFO 37941 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:21:02.264  INFO 37941 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:21:02.264  INFO 37941 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:21:02.269  INFO 37941 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:21:02.414  INFO 37941 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:21:02.742  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2421cc4: startup date [Thu Aug 09 17:20:56 CST 2018]; root of context hierarchy
-2018-08-09 17:21:02.784  WARN 37941 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-09 17:21:02.821  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-08-09 17:21:02.824  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add(com.jnrise.server.model.Click)
-2018-08-09 17:21:02.826  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clickCount]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickCountController.add(com.jnrise.server.model.ClickCount)
-2018-08-09 17:21:02.827  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-08-09 17:21:02.828  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-08-09 17:21:02.829  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-08-09 17:21:02.829  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:21:02.830  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-08-09 17:21:02.831  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-08-09 17:21:02.832  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/moduleStay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ModuleStayController.add(com.jnrise.server.model.ModuleStay)
-2018-08-09 17:21:02.833  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-08-09 17:21:02.833  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sms]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.SmsController.sms(java.lang.String)
-2018-08-09 17:21:02.834  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.StayController.add(com.jnrise.server.model.Stay)
-2018-08-09 17:21:02.835  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encode]}" onto public java.lang.String com.jnrise.server.controller.UrlController.encode(java.lang.String)
-2018-08-09 17:21:02.837  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-09 17:21:02.838  INFO 37941 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:21:02.875  INFO 37941 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:21:02.875  INFO 37941 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:21:03.316  INFO 37941 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-08-09 17:21:03.319  INFO 37941 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
-2018-08-09 17:21:03.327  INFO 37941 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2018-08-09 17:21:03.435  INFO 37941 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-08-09 17:21:03.440  INFO 37941 --- [main] c.jnrise.server.LandingPageApplication   : Started LandingPageApplication in 7.687 seconds (JVM running for 8.926)
-2018-08-09 17:21:16.260  INFO 37941 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-08-09 17:21:16.260  INFO 37941 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2018-08-09 17:21:16.283  INFO 37941 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
-2018-08-09 17:21:29.117 ERROR 37941 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: 1] with root cause
-
-java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.jnrise.server.controller.UrlController.deal(UrlController.java:35) ~[classes/:na]
-	at com.jnrise.server.controller.UrlController.encode(UrlController.java:20) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_40]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_40]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_40]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_40]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
-
-2018-08-09 17:21:47.484 ERROR 37941 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArrayIndexOutOfBoundsException: 1] with root cause
-
-java.lang.ArrayIndexOutOfBoundsException: 1
-	at com.jnrise.server.controller.UrlController.deal(UrlController.java:35) ~[classes/:na]
-	at com.jnrise.server.controller.UrlController.encode(UrlController.java:20) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_40]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_40]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_40]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_40]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
-
-2018-08-09 17:21:47.613  INFO 37941 --- [Thread-19] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:21:47.620  INFO 37941 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-08-09 17:21:47.637  INFO 37941 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-08-09 17:25:50.720  INFO 38046 --- [main] c.jnrise.server.LandingPageApplication   : Starting LandingPageApplication on weifengdeMacBook-Pro.local with PID 38046 (/Users/wuwf/project/landing_page/target/classes started by wuwf in /Users/wuwf/project/landing_page)
-2018-08-09 17:25:50.723  INFO 38046 --- [main] c.jnrise.server.LandingPageApplication   : No active profile set, falling back to default profiles: default
-2018-08-09 17:25:50.875  INFO 38046 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e82df6a: startup date [Thu Aug 09 17:25:50 CST 2018]; root of context hierarchy
-2018-08-09 17:25:52.987  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d38496] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.149  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$49e5bab4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.168  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$3e597f58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.188  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.210  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.231  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.237  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$702018a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.250  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.252  INFO 38046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:25:53.524  INFO 38046 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-08-09 17:25:53.552  INFO 38046 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-08-09 17:25:53.552  INFO 38046 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
-2018-08-09 17:25:53.556  INFO 38046 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/wuwf/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-08-09 17:25:53.668  INFO 38046 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-08-09 17:25:53.669  INFO 38046 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2794 ms
-2018-08-09 17:25:53.946  INFO 38046 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-08-09 17:25:53.954  INFO 38046 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-08-09 17:25:53.954  INFO 38046 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-08-09 17:25:53.955  INFO 38046 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-08-09 17:25:53.955  INFO 38046 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-08-09 17:25:54.188  INFO 38046 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:25:54.204  INFO 38046 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-08-09 17:25:54.274  INFO 38046 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-08-09 17:25:54.275  INFO 38046 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-09 17:25:54.308  INFO 38046 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-09 17:25:54.566  INFO 38046 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-09 17:25:54.987  INFO 38046 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-09 17:25:54.996  INFO 38046 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-08-09 17:25:55.777  INFO 38046 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:25:56.429  INFO 38046 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:25:56.429  INFO 38046 --- [main] com.yunpian.sdk.YunpianConf              : load default yunpian.properties
-2018-08-09 17:25:56.430  INFO 38046 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:25:56.507  INFO 38046 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:25:56.507  INFO 38046 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:25:56.512  INFO 38046 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:25:56.610  INFO 38046 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:25:56.999  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e82df6a: startup date [Thu Aug 09 17:25:50 CST 2018]; root of context hierarchy
-2018-08-09 17:25:57.035  WARN 38046 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-09 17:25:57.069  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-08-09 17:25:57.072  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add(com.jnrise.server.model.Click)
-2018-08-09 17:25:57.073  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clickCount]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickCountController.add(com.jnrise.server.model.ClickCount)
-2018-08-09 17:25:57.075  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-08-09 17:25:57.076  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-08-09 17:25:57.077  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-08-09 17:25:57.077  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:25:57.078  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-08-09 17:25:57.079  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-08-09 17:25:57.080  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/moduleStay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ModuleStayController.add(com.jnrise.server.model.ModuleStay)
-2018-08-09 17:25:57.081  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-08-09 17:25:57.082  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sms]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.SmsController.sms(java.lang.String)
-2018-08-09 17:25:57.083  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.StayController.add(com.jnrise.server.model.Stay)
-2018-08-09 17:25:57.084  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encode]}" onto public java.lang.String com.jnrise.server.controller.UrlController.encode(com.jnrise.server.bean.BaseUrlBean)
-2018-08-09 17:25:57.086  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-09 17:25:57.087  INFO 38046 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:25:57.120  INFO 38046 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:25:57.121  INFO 38046 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:25:57.578  INFO 38046 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-08-09 17:25:57.579  INFO 38046 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
-2018-08-09 17:25:57.586  INFO 38046 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2018-08-09 17:25:57.631  INFO 38046 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-08-09 17:25:57.635  INFO 38046 --- [main] c.jnrise.server.LandingPageApplication   : Started LandingPageApplication in 7.651 seconds (JVM running for 8.882)
-2018-08-09 17:26:31.728  INFO 38046 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-08-09 17:26:31.730  INFO 38046 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2018-08-09 17:26:31.751  INFO 38046 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
-2018-08-09 17:27:02.299  INFO 38082 --- [main] c.j.server.LandingPageApplicationTests   : Starting LandingPageApplicationTests on weifengdeMacBook-Pro.local with PID 38082 (started by wuwf in /Users/wuwf/project/landing_page)
-2018-08-09 17:27:02.304  INFO 38082 --- [main] c.j.server.LandingPageApplicationTests   : No active profile set, falling back to default profiles: default
-2018-08-09 17:27:02.362  INFO 38082 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d23e042: startup date [Thu Aug 09 17:27:02 CST 2018]; root of context hierarchy
-2018-08-09 17:27:04.499  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c5d2655] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.565  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$a56f5c73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.600  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$99e32117] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.644  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.671  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.688  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.698  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.CaffeineCacheConfiguration$$EnhancerBySpringCGLIB$$cba9ba5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.728  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [org.springframework.cache.caffeine.CaffeineCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:04.732  INFO 38082 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-09 17:27:05.044  INFO 38082 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:27:05.076  INFO 38082 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2018-08-09 17:27:05.349  INFO 38082 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
-2018-08-09 17:27:05.362  INFO 38082 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-09 17:27:05.441  INFO 38082 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-09 17:27:05.648  INFO 38082 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-09 17:27:06.332  INFO 38082 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-09 17:27:06.357  INFO 38082 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2018-08-09 17:27:07.768  INFO 38082 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-09 17:27:09.469  INFO 38082 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:27:09.470  INFO 38082 --- [main] com.yunpian.sdk.YunpianConf              : load default yunpian.properties
-2018-08-09 17:27:09.471  INFO 38082 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:27:09.653  INFO 38082 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
-2018-08-09 17:27:09.654  INFO 38082 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:27:09.659  INFO 38082 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
-2018-08-09 17:27:10.189  INFO 38082 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:27:10.630  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d23e042: startup date [Thu Aug 09 17:27:02 CST 2018]; root of context hierarchy
-2018-08-09 17:27:10.728  WARN 38082 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-09 17:27:11.072  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
-2018-08-09 17:27:11.075  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add(com.jnrise.server.model.Click)
-2018-08-09 17:27:11.076  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clickCount]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickCountController.add(com.jnrise.server.model.ClickCount)
-2018-08-09 17:27:11.079  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
-2018-08-09 17:27:11.080  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
-2018-08-09 17:27:11.083  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
-2018-08-09 17:27:11.084  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:27:11.086  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
-2018-08-09 17:27:11.088  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
-2018-08-09 17:27:11.090  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/moduleStay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ModuleStayController.add(com.jnrise.server.model.ModuleStay)
-2018-08-09 17:27:11.093  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
-2018-08-09 17:27:11.094  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sms]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.SmsController.sms(java.lang.String)
-2018-08-09 17:27:11.096  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.StayController.add(com.jnrise.server.model.Stay)
-2018-08-09 17:27:11.097  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encode]}" onto public java.lang.String com.jnrise.server.controller.UrlController.encode(com.jnrise.server.bean.BaseUrlBean)
-2018-08-09 17:27:11.102  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-09 17:27:11.104  INFO 38082 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-09 17:27:11.155  INFO 38082 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:27:11.156  INFO 38082 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-09 17:27:11.692  INFO 38082 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 10.049 seconds (JVM running for 11.125)
-2018-08-09 17:27:11.938  INFO 38082 --- [Thread-2] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
-2018-08-09 17:27:11.945  INFO 38082 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-08-09 17:27:11.961  INFO 38082 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-10 12:44:14.604  INFO 48798 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-08-10 12:44:14.607  INFO 48798 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-10 12:44:14.669  INFO 48798 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-10 12:44:14.852  INFO 48798 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-10 12:44:15.444  INFO 48798 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-10 12:44:15.484  INFO 48798 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-08-10 12:44:16.598  INFO 48798 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-10 12:44:17.831  INFO 48798 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
+2018-08-10 12:44:17.832  INFO 48798 --- [main] com.yunpian.sdk.YunpianConf              : load default yunpian.properties
+2018-08-10 12:44:17.833  INFO 48798 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
+2018-08-10 12:44:18.003  INFO 48798 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is initing!
+2018-08-10 12:44:18.004  INFO 48798 --- [main] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
+2018-08-10 12:44:18.009  INFO 48798 --- [main] com.yunpian.sdk.YunpianConf              : apikey-0517161859cdb8ec7018543af92bc049 conf-{yp.flow.host=https://flow.yunpian.com, yp.sign.host=https://sms.yunpian.com, yp.tpl.host=https://sms.yunpian.com, http.conn.maxperroute=50, yp.user.host=https://sms.yunpian.com, yp.version=v2, yp.call.host=https://call.yunpian.com, yp.short_url.host=https://sms.yunpian.com, http.charset=utf-8, http.conn.timeout=10000, yp.voice.host=https://voice.yunpian.com, http.so.timeout=30000, yp.sms.host=https://sms.yunpian.com, http.conn.maxtotal=200}
+2018-08-10 12:44:18.441  INFO 48798 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-10 12:44:19.117  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d23e042: startup date [Fri Aug 10 12:44:11 CST 2018]; root of context hierarchy
+2018-08-10 12:44:19.216  WARN 48798 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-10 12:44:19.277  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/channel],methods=[GET]}" onto public com.jnrise.server.bean.AllChannelData com.jnrise.server.controller.ChannelController.findAll()
+2018-08-10 12:44:19.280  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/click]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickController.add(com.jnrise.server.model.Click)
+2018-08-10 12:44:19.282  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/clickCount]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ClickCountController.add(com.jnrise.server.model.ClickCount)
+2018-08-10 12:44:19.286  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/enter],methods=[POST]}" onto public com.jnrise.server.bean.EnterData com.jnrise.server.controller.EnterController.add(com.jnrise.server.model.Enter)
+2018-08-10 12:44:19.288  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/info],methods=[POST]}" onto public com.jnrise.server.bean.InfoData com.jnrise.server.controller.InfoController.save(com.jnrise.server.model.Info)
+2018-08-10 12:44:19.290  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/query]}" onto public com.jnrise.server.bean.InfoListData com.jnrise.server.controller.InfoExcelController.query(com.jnrise.server.requestbody.InfoQuery)
+2018-08-10 12:44:19.291  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/excel/download]}" onto public void com.jnrise.server.controller.InfoExcelController.downloadByPoiBaseView(com.jnrise.server.requestbody.InfoQuery,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-10 12:44:19.293  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public com.jnrise.server.bean.LoginData com.jnrise.server.controller.LoginController.login(com.jnrise.server.model.User)
+2018-08-10 12:44:19.295  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mobile],methods=[POST]}" onto public com.jnrise.server.bean.MobileData com.jnrise.server.controller.MobileController.add(com.jnrise.server.model.Mobile)
+2018-08-10 12:44:19.296  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/moduleStay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.ModuleStayController.add(com.jnrise.server.model.ModuleStay)
+2018-08-10 12:44:19.299  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{s}]}" onto public java.lang.String com.jnrise.server.controller.RedirectController.redirect(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-08-10 12:44:19.305  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sms]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.SmsController.sms(java.lang.String)
+2018-08-10 12:44:19.306  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/stay]}" onto public com.jnrise.server.bean.BaseData com.jnrise.server.controller.StayController.add(com.jnrise.server.model.Stay)
+2018-08-10 12:44:19.308  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encode]}" onto public java.lang.String com.jnrise.server.controller.UrlController.encode(com.jnrise.server.bean.BaseUrlBean)
+2018-08-10 12:44:19.313  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-10 12:44:19.315  INFO 48798 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-10 12:44:19.379  INFO 48798 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-10 12:44:19.380  INFO 48798 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-10 12:44:19.905  INFO 48798 --- [main] c.j.server.LandingPageApplicationTests   : Started LandingPageApplicationTests in 9.143 seconds (JVM running for 10.286)
+2018-08-10 12:44:20.140  INFO 48798 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d23e042: startup date [Fri Aug 10 12:44:11 CST 2018]; root of context hierarchy
+2018-08-10 12:44:20.145  INFO 48798 --- [Thread-2] com.yunpian.sdk.YunpianClient            : YunpianClient is closing!
+2018-08-10 12:44:20.151  INFO 48798 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-10 12:44:20.165  INFO 48798 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
