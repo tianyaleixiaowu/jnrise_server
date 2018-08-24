@@ -59,6 +59,7 @@ public class BaseUrlBean {
     }
 
     public BaseUrlBean decrypt(String sign) {
+        System.out.println("sign = " + sign);
         String originalStr = AESOperator.getInstance().decrypt(sign);
         String[] array = originalStr.split(",");
         try {
