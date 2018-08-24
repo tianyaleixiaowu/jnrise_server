@@ -20,6 +20,16 @@ public class ClickCount extends BaseEntity {
 
     private String otherInfo;
 
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public String getCoordinate() {
         return coordinate;
     }

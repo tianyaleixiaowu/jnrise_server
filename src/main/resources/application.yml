@@ -16,5 +16,8 @@ spring:
     type: caffeine
     caffeine:
       spec: maximumSize=500,expireAfterAccess=3600s   #最后一次写入或访问后经过固定时间过期
+rong:
+  appKey: qd46yzrfqi2cf
+  appSecret: nN38unwROub
 logging:
   file: ./logback.log
