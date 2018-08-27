@@ -22,4 +22,9 @@ public class ClickCountController {
         clickCountManager.add(clickCount);
         return new BaseData(0, "");
     }
+
+    @RequestMapping("/query")
+    public BaseData query(String type, String beginTime, String endTime, String url) {
+        return clickCountManager.query(type, beginTime, endTime, url);
+    }
 }
