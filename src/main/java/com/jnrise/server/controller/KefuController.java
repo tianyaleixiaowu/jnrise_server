@@ -24,7 +24,7 @@ public class KefuController {
      * @return
      * 客服信息
      */
-    @RequestMapping("/")
+    @RequestMapping("")
     public BaseData queryKefuId(Integer kefu) {
         return kefuManager.findKefu(kefu);
     }
