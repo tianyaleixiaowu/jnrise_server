@@ -5,6 +5,7 @@ import com.jnrise.server.model.ClickCount;
 import com.jnrise.server.repository.ClickCountRepository;
 import com.jnrise.server.specify.Criteria;
 import com.jnrise.server.specify.Restrictions;
+import com.jnrise.server.util.CommonUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -33,10 +34,9 @@ public class ClickCountManager {
     public ClickCountData query(String type, String beginTime, String endTime, String url) {
         Criteria<ClickCount> criteria = new Criteria<>();
         criteria.add(Restrictions.eq("type", type, true));
-        criteria.add(Restrictions.gt("createTime", beginTime, true));
-        criteria.add(Restrictions.lt("createTime", endTime, true));
+        criteria.add(Restrictions.gt("createTime", CommonUtil.dateOfStr(beginTime), true));
+        criteria.add(Restrictions.lt("createTime", CommonUtil.dateOfStr(endTime), true));
         criteria.add(Restrictions.like("url", "%" + url + "%", true));
-
         ClickCountData clickCountData = new ClickCountData();
         clickCountData.setCode(0);
         clickCountData.setData(clickCountRepository.findAll(criteria));
