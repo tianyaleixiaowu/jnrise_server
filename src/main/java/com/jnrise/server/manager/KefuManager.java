@@ -9,6 +9,7 @@ import io.rong.RongCloud;
 import io.rong.methods.user.User;
 import io.rong.models.response.TokenResult;
 import io.rong.models.user.UserModel;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -103,6 +104,7 @@ public class KefuManager {
         TokenResult result = user.register(userModel);
         String token = result.getToken();
         rongUser = new RongUser();
+        BeanUtils.copyProperties(temp, rongUser);
         rongUser.setName(temp.getUserId());
         rongUser.setKefu(0);
         rongUser.setToken(token);
