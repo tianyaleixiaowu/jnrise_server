@@ -34,9 +34,20 @@ public class KefuController {
         return kefuManager.regist(rongUser);
     }
 
+    /**
+     * 保存聊天记录
+     */
     @RequestMapping("/send")
-    public BaseData send(String userId, String kefuId, String cotent) throws Exception {
-        return kefuManager.send(userId, kefuId, cotent);
+    public BaseData send(String fromUserId, String toUserId, String content) throws Exception {
+        return kefuManager.send(fromUserId, toUserId, content);
+    }
+
+    /**
+     * 获取最近联系人
+     */
+    @RequestMapping("/contact")
+    public BaseData contact(String kefuId)  {
+        return kefuManager.contact(kefuId);
     }
 
 }

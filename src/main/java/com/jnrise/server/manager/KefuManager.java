@@ -1,7 +1,9 @@
 package com.jnrise.server.manager;
 
 import com.jnrise.server.bean.BaseData;
+import com.jnrise.server.bean.ContactUserData;
 import com.jnrise.server.bean.RongUserData;
+import com.jnrise.server.model.RongMessage;
 import com.jnrise.server.model.RongUser;
 import com.jnrise.server.repository.RongMessageRepository;
 import com.jnrise.server.repository.RongUserRepository;
@@ -68,14 +70,30 @@ public class KefuManager {
     }
 
     /**
-     * 发送单聊消息
-     * @param userId
-     * @param kefuId
-     * @param cotent
+     * 保存单聊消息
+     * @param fromUserId
+     * @param toUserId
+     * @param content
      * @return
      */
-    public BaseData send(String userId, String kefuId, String cotent) {
-        return null;
+    public BaseData send(String fromUserId, String toUserId, String content) {
+        RongMessage rongMessage = new RongMessage();
+        rongMessage.setFromUserId(fromUserId);
+        rongMessage.setToUserId(toUserId);
+        rongMessage.setMessage(content);
+
+        rongMessageRepository.save(rongMessage);
+        BaseData baseData = new BaseData();
+        baseData.setCode(0);
+        return baseData;
+    }
+
+    public ContactUserData contact(String kefuId) {
+        List<String> rongMessages = rongMessageRepository.findByToUserId(kefuId);
+        ContactUserData contactUserData = new ContactUserData();
+        contactUserData.setData(rongMessages);
+        contactUserData.setCode(0);
+        return contactUserData;
     }
 
     /**
