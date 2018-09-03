@@ -18,7 +18,7 @@ public class StayManager {
     private StayRepository stayRepository;
 
     public Stay add(Stay stay) {
-        List<Stay> stays = stayRepository.findByUserId(stay.getUserId());
+        List<Stay> stays = stayRepository.findByUserIdAndVersion(stay.getUserId(), stay.getVersion());
         if (CollectionUtils.isEmpty(stays)) {
             return stayRepository.save(stay);
         } else {

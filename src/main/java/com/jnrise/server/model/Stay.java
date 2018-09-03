@@ -13,6 +13,16 @@ public class Stay extends BaseEntity {
     private Integer totalTime;
     private String otherInfo;
 
+    private String version;
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
     public String getOtherInfo() {
         return otherInfo;
     }
