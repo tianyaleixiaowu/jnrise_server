@@ -50,4 +50,12 @@ public class KefuController {
         return kefuManager.contact(kefuId);
     }
 
+    /**
+     * 获取最近聊天记录
+     */
+    @RequestMapping("/history")
+    public BaseData history(String kefuId, String userId) {
+        return kefuManager.history(kefuId, userId);
+    }
+
 }

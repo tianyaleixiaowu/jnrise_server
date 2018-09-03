@@ -2,6 +2,7 @@ package com.jnrise.server.manager;
 
 import com.jnrise.server.bean.BaseData;
 import com.jnrise.server.bean.ContactUserData;
+import com.jnrise.server.bean.HistoryData;
 import com.jnrise.server.bean.RongUserData;
 import com.jnrise.server.model.RongMessage;
 import com.jnrise.server.model.RongUser;
@@ -94,6 +95,16 @@ public class KefuManager {
         contactUserData.setData(rongMessages);
         contactUserData.setCode(0);
         return contactUserData;
+    }
+
+
+    public HistoryData history(String fromId, String toId) {
+        List<RongMessage> rongMessages = rongMessageRepository.findMessages(fromId, toId);
+        HistoryData historyData = new HistoryData();
+        historyData.setRongMessages(rongMessages);
+        historyData.setCode(0);
+
+        return historyData;
     }
 
     /**
