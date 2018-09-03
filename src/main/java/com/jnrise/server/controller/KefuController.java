@@ -54,8 +54,8 @@ public class KefuController {
      * 获取最近聊天记录
      */
     @RequestMapping("/history")
-    public BaseData history(String kefuId, String userId) {
-        return kefuManager.history(kefuId, userId);
+    public BaseData history(String fromId, String toId) {
+        return kefuManager.history(fromId, toId);
     }
 
 }
