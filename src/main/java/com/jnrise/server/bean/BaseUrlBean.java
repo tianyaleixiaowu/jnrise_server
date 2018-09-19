@@ -28,8 +28,8 @@ public class BaseUrlBean {
         //    baseUrlBean.setType2(0 + "");
         //    System.out.println("https://mm.jnrise.cn:88/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
         //}
-        String s = "channel=xhl&original=1331&type1=com.mampod.ergedd&type2=xueke_tc\n" +
-                "channel=xhl&original=3381&type1=tv.danmaku.bili&type2=xueke_tc";
+        String s =
+                "channel=hudongtui&original=guolin&type1=guo1&type2=hudong";
         String[] array = s.split("\n");
         for (String ss : array) {
             deal(ss);

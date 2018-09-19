@@ -33,6 +33,9 @@ public class BaseEntity {
     private String url;
     private String param;
 
+    private String ip;
+    private String userAgent;
+
     private Date createTime = new Date();
 
     private Date updateTime = new Date();
@@ -63,10 +66,15 @@ public class BaseEntity {
                 ", original='" + original + '\'' +
                 ", type1='" + type1 + '\'' +
                 ", type2='" + type2 + '\'' +
-                ", company=" + company +
-                ", userId=" + userId +
+                ", company='" + company + '\'' +
+                ", userId='" + userId + '\'' +
+                ", url='" + url + '\'' +
+                ", param='" + param + '\'' +
+                ", ip='" + ip + '\'' +
+                ", userAgent='" + userAgent + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", sign='" + sign + '\'' +
                 '}';
     }
 
@@ -76,6 +84,22 @@ public class BaseEntity {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public String getUserAgent() {
+        return userAgent;
+    }
+
+    public void setUserAgent(String userAgent) {
+        this.userAgent = userAgent;
     }
 
     public String getParam() {

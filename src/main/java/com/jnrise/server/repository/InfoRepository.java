@@ -11,4 +11,6 @@ import java.util.List;
  */
 public interface InfoRepository extends JpaRepository<Info, Long>, JpaSpecificationExecutor<Info> {
     List<Info> findByPhone(String phone);
+
+    List<Info> findByChannel(String channel);
 }

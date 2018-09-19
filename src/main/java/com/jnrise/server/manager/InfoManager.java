@@ -39,6 +39,14 @@ public class InfoManager {
     }
 
     /**
+     * 查询留资
+     * @param channel 渠道
+     */
+    public InfoListData query(String channel) {
+         return null;
+    }
+
+    /**
      * 条件查询
      *
      * @param infoQuery

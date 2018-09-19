@@ -1,8 +1,10 @@
 package com.jnrise.server.controller;
 
 import com.jnrise.server.bean.InfoData;
+import com.jnrise.server.bean.InfoListData;
 import com.jnrise.server.manager.InfoManager;
 import com.jnrise.server.model.Info;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +28,15 @@ public class InfoController {
         infoData.setCode(0);
         infoData.setInfo(infoManager.save(info));
         return infoData;
+    }
+
+    /**
+     * 查询留资
+     * @param channel 渠道
+     */
+    @GetMapping
+    public InfoListData query(String channel) {
+        return infoManager.query(channel);
     }
 
 }
