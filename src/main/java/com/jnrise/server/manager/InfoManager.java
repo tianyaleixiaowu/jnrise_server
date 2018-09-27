@@ -118,7 +118,9 @@ public class InfoManager {
             criteria.add(Restrictions.ne("channel", "test", true));
         }
         String company = infoQuery.getCompany();
-        criteria.add(Restrictions.eq("company", company, true));
+        if (company != null) {
+            criteria.add(Restrictions.eq("company", company, true));
+        }
 
         int page = 0;
         if (infoQuery.getPage() != null) {
