@@ -29,7 +29,17 @@ public class BaseUrlBean {
         //    System.out.println("https://mm.jnrise.cn:88/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
         //}
         String s =
-                "channel=hudongtui&original=guolin&type1=guo1&type2=hudong";
+                "channel=hudongtui&original=1&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=2&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=3&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=4&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=5&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=6&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=7&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=8&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=9&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=10&type1=1&type2=1\n";
+        //String s = "channel=test&original=test&type1=1&type2=1";
         String[] array = s.split("\n");
         for (String ss : array) {
             deal(ss);
@@ -37,9 +47,9 @@ public class BaseUrlBean {
     }
 
     public static void deal(String s) {
-        String[] array = s.replace("channel=","")
-                .replace("original=","")
-                .replace("type1=","")
+        String[] array = s.replace("channel=", "")
+                .replace("original=", "")
+                .replace("type1=", "")
                 .replace("type2=", "").split("&");
 
         BaseUrlBean baseUrlBean = new BaseUrlBean();
@@ -47,11 +57,12 @@ public class BaseUrlBean {
         baseUrlBean.setOriginal(array[1]);
         baseUrlBean.setType1(array[2]);
         baseUrlBean.setType2(array[3]);
-        System.out.println("https://mm.jnrise.cn/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
+        System.out.println("http://tutor.maimenggroup.com/tutor-web/txu1npra.html?sign=" + baseUrlBean.encrypt());
     }
 
     /**
      * 加密
+     *
      * @return 密串
      */
     public String encrypt() {

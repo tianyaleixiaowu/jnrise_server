@@ -17,9 +17,19 @@ public class InfoQuery {
 
     private String channelsStr;
 
+    private String company;
+
     private Integer page;
 
     private Integer size;
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
 
     public String getChannelsStr() {
         return channelsStr;
