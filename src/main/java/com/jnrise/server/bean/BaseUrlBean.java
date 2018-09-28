@@ -29,16 +29,16 @@ public class BaseUrlBean {
         //    System.out.println("https://mm.jnrise.cn:88/loading/r1oxd5.html?sign=" + baseUrlBean.encrypt());
         //}
         String s =
-                "channel=hudongtui&original=1&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=2&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=3&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=4&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=5&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=6&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=7&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=8&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=9&type1=1&type2=1\n"
-                        + "channel=hudongtui&original=10&type1=1&type2=1\n";
+                "channel=hudongtui&original=11&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=12&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=13&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=14&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=15&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=16&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=17&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=18&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=19&type1=1&type2=1\n"
+                        + "channel=hudongtui&original=20&type1=1&type2=1\n";
         //String s = "channel=test&original=test&type1=1&type2=1";
         String[] array = s.split("\n");
         for (String ss : array) {
@@ -57,7 +57,7 @@ public class BaseUrlBean {
         baseUrlBean.setOriginal(array[1]);
         baseUrlBean.setType1(array[2]);
         baseUrlBean.setType2(array[3]);
-        System.out.println("http://tutor.maimenggroup.com/tutor-web/txu1npra.html?sign=" + baseUrlBean.encrypt());
+        System.out.println("http://tutor.maimenggroup.com/tutor-web/txu1nbrb.html?sign=" + baseUrlBean.encrypt());
     }
 
     /**
