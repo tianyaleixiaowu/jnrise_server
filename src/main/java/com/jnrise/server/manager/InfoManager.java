@@ -1,6 +1,7 @@
 package com.jnrise.server.manager;
 
 import com.jnrise.server.bean.InfoListData;
+import com.jnrise.server.bean.InfoVO;
 import com.jnrise.server.bean.SimplePage;
 import com.jnrise.server.excel.InfoExcel;
 import com.jnrise.server.model.Info;
@@ -20,6 +21,7 @@ import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author wuweifeng wrote on 2018/4/12.
@@ -40,10 +42,27 @@ public class InfoManager {
 
     /**
      * 查询留资
-     * @param channel 渠道
+     *
+     * @param channel
+     *         渠道
      */
-    public InfoListData query(String channel) {
-         return null;
+    public List<InfoVO> query(String channel, String company, String begin, String end) {
+        Date beginDate = CommonUtil.beginOfDay(begin);
+        Date endDate = CommonUtil.endOfDay(end);
+        Criteria<Info> criteria = new Criteria<>();
+        criteria.add(Restrictions.gte("createTime", beginDate, true));
+        criteria.add(Restrictions.lte("createTime", endDate, true));
+        criteria.add(Restrictions.eq("company", company, true));
+        List<Info> infos = infoRepository.findAll(criteria);
+
+
+        return infos.stream().map(this::parse).collect(Collectors.toList());
+    }
+
+    private InfoVO parse(Info info) {
+        InfoVO infoVO = new InfoVO();
+        BeanUtils.copyProperties(info, infoVO);
+        return infoVO;
     }
 
     /**

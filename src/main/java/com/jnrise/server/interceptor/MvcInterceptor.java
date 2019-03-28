@@ -1,7 +1,5 @@
 package com.jnrise.server.interceptor;
 
-import com.jnrise.server.ApplicationContextProvider;
-import com.jnrise.server.cache.UserCache;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,19 +14,19 @@ public class MvcInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
-        String token = request.getHeader("token");
-        if (request.getRequestURI().contains("download")) {
-            return true;
-        }
-        //如果是访问统计、下载Excel的接口，需要先登录
-        if (request.getRequestURI().contains("excel")) {
-            //没token，或token在缓存中找不到
-            if (token == null || ApplicationContextProvider.getBean(UserCache.class).findUserByToken(token) ==
-                    null) {
-                gotoLogin(response);
-                return false;
-            }
-        }
+        //String token = request.getHeader("token");
+        //if (request.getRequestURI().contains("download")) {
+        //    return true;
+        //}
+        ////如果是访问统计、下载Excel的接口，需要先登录
+        //if (request.getRequestURI().contains("excel")) {
+        //    //没token，或token在缓存中找不到
+        //    if (token == null || ApplicationContextProvider.getBean(UserCache.class).findUserByToken(token) ==
+        //            null) {
+        //        gotoLogin(response);
+        //        return false;
+        //    }
+        //}
 
         return true;
     }

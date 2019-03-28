@@ -1,6 +1,7 @@
 package com.jnrise.server.util;
 
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -21,6 +22,40 @@ public class CommonUtil {
         SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
             return sDateFormat.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    /**
+     * 只接受这样的格式2017-09-3，不能带时分秒
+     *
+     * @param date
+     *         年月日
+     * @return 该天的开始
+     */
+    public static Date beginOfDay(String date) {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            return dateFormat.parse(date + " 00:00:00");
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    /**
+     * 只接受这样的格式2017-09-3，不能带时分秒
+     *
+     * @param date
+     *         年月日
+     * @return 该天的结束
+     */
+    public static Date endOfDay(String date) {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            return dateFormat.parse(date + " 23:59:59");
         } catch (ParseException e) {
             e.printStackTrace();
             return null;
