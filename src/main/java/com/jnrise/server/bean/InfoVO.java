@@ -1,5 +1,7 @@
 package com.jnrise.server.bean;
 
+import java.util.Date;
+
 /**
  * @author wuweifeng wrote on 2019/3/28.
  */
@@ -25,6 +27,16 @@ public class InfoVO {
      */
     private String school;
     private String url;
+
+    private Date createTime;
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 
     public String getUrl() {
         return url;
