@@ -21,3 +21,6 @@ rong:
   appSecret: nN38unwROub
 logging:
   file: ./logback.log
+server:
+  servlet:
+    context-path: /loading
